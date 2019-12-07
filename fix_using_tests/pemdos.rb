@@ -1,7 +1,12 @@
 def snake_it_up(string)
+  array = []
   if string[0] == "s"
-    10.times { "s" + string}
+    10.times do
+      array << 's'
+    end
+    array << string
   else
-    string
+    return string
   end
+  return array.join()
 end
